@@ -114,6 +114,7 @@ export class AdminComponent implements OnInit {
     });
     localStorage.setItem('books', JSON.stringify(this.books));
     this.showUpdate = false;
+    this.showAddBtn = true;
   }
 
   updatebtn(data: any) {
