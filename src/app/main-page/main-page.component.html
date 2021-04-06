@@ -1,0 +1,49 @@
+<div class="fullpage">
+  <mdb-navbar
+    SideClass="navbar top-nav-collapse fixed-top navbar-expand-lg navbar-dark scrolling-navbar intro-fixed-nav"
+    [containerInside]="false"
+    class="nav_details"
+  >
+    <mdb-navbar-brand>
+      <div
+        class="logo logo1 navbar-brand"
+        routerLink="/home"
+        style="outline: none"
+      >
+        <p
+          style="
+            font-size: 30px;
+            font-family: Scada, sans-serif;
+            font-weight: 800;
+          "
+        >
+          MYBOOK
+        </p>
+      </div>
+    </mdb-navbar-brand>
+    <links class="linksdata">
+      <ul class="navbar-nav ml-auto items">
+        <!-- <li class="nav-item active waves-light" mdbWavesEffect>
+            <a class="nav-link"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li> -->
+
+        <li class="nav-item waves-light ml-5 item-data" mdbWavesEffect>
+          <a class="nav-link text-data" routerLink="/admin">Admin</a>
+        </li>
+        <li class="nav-item waves-light ml-5 item-data" mdbWavesEffect>
+          <a class="nav-link text-data" routerLink="/user">User</a>
+        </li>
+        <!-- <li class="nav-item waves-light ml-5 item-data" mdbWavesEffect>
+          <a class="nav-link text-data" routerLink="/pricing">Pricing</a>
+        </li>
+        <li class="nav-item waves-light ml-5 item-data" mdbWavesEffect>
+          <a class="nav-link text-data" routerLink="/about-us">About Us</a>
+        </li> -->
+      </ul>
+    </links>
+  </mdb-navbar>
+</div>
+<router-outlet></router-outlet>

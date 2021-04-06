@@ -1,0 +1,43 @@
+<div class="full-page">
+  <!-- <input type="search" [(ngModel)]="searchTerm" /> -->
+  <div class="container">
+    <div class="md-form">
+      <mdb-icon fas icon="search" class="prefix"></mdb-icon>
+      <input
+        mdbInput
+        type="text"
+        id="form2"
+        class="form-control"
+        [(ngModel)]="searchTerm"
+      />
+      <label for="form2" class="text-white">Search </label>
+    </div>
+    <div class="row m-0">
+      <div
+        *ngFor="let item of books | searchPipe: searchTerm; index as i"
+        class="col-lg-4 col-md-6 col-sm-12 p-4"
+      >
+        <div class="card" style="border: none">
+          <div class="img_div">
+            <img src="../../assets/lion1.jpeg" alt="lion" class="img_holder" />
+            <div class="img_overlay">
+              <p class="name" style="font-size: large; font-weight: 600">
+                {{ item.name }}
+              </p>
+              <p class="name" style="font-size: small">
+                {{ item.description }}
+              </p>
+              <button
+                [disabled]="item.status === 'UNAVAILABLE'"
+                class="btn btn-primary"
+                (click)="getBook(item)"
+              >
+                Get book
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

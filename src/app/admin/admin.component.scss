@@ -1,0 +1,211 @@
+.full-page {
+  // background: url(../../assets/homeBg.png) no-repeat;
+  // height: 50vh;
+  // padding: 7rem 10rem 7rem 10rem;
+  padding-top: 5.5rem;
+
+  .img_div {
+    // border: none;
+    position: relative;
+    .img_holder {
+      height: 400px;
+      width: 100%;
+      display: block;
+      // border: none;
+    }
+    .img_overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      font-family: "Scada", sans-serif;
+      background: rgba(0, 0, 0, 0.6);
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: opacity 0.25s;
+      -webkit-transition: opacity 0.25s;
+      -moz-transition: opacity 0.25s;
+      -ms-transition: opacity 0.25s;
+      -o-transition: opacity 0.25s;
+    }
+    .img_overlay--blur {
+      backdrop-filter: blur(5px);
+    }
+    .img_overlay > * {
+      transform: translateY(20px);
+      -webkit-transform: translateY(20px);
+      -moz-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      -o-transform: translateY(20px);
+      transition: transform 0.25s;
+      -webkit-transition: transform 0.25s;
+      -moz-transition: transform 0.25s;
+      -ms-transition: transform 0.25s;
+      -o-transition: transform 0.25s;
+    }
+    .img_overlay:hover {
+      opacity: 1;
+    }
+    .img_overlay:hover > * {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -moz-transform: translateX(0);
+      -ms-transform: translateX(0);
+      -o-transform: translateX(0);
+    }
+  }
+  .request_form {
+    .form {
+      .grid_detail {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 37px;
+        width: 588px;
+        margin-bottom: 1rem;
+        .fname {
+          .fname_title {
+            // width: 85px;
+            height: 24px;
+
+            font-family: "Scada", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+
+            color: #040523;
+          }
+          .fname_input {
+            width: 274px;
+            height: 60px;
+
+            background: #ffffff;
+            border: 1px solid rgba(62, 64, 151, 0.19);
+            box-sizing: border-box;
+            border-radius: 5px;
+          }
+        }
+        .lname {
+          .lname_title {
+            // width: 82px;
+            height: 24px;
+
+            font-family: "Scada", sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 24px;
+
+            color: #040523;
+          }
+          .lname_input {
+            width: 274px;
+            height: 60px;
+
+            background: #ffffff;
+            border: 1px solid rgba(62, 64, 151, 0.19);
+            box-sizing: border-box;
+            border-radius: 5px;
+          }
+        }
+      }
+      .email {
+        margin-bottom: 1rem;
+        .email_title {
+          width: 185px;
+          height: 24px;
+
+          font-family: "Scada", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height, or 133% */
+
+          color: #040523;
+        }
+        .email_input {
+          width: 588px;
+          height: 60px;
+
+          background: #ffffff;
+          border: 1px solid rgba(62, 64, 151, 0.19);
+          box-sizing: border-box;
+          border-radius: 5px;
+        }
+      }
+      .companyName {
+        margin-bottom: 1rem;
+        .companyName_title {
+          width: 122px;
+          height: 24px;
+
+          font-family: "Scada", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height, or 133% */
+
+          color: #040523;
+        }
+        .companyName_input {
+          width: 588px;
+          height: 60px;
+
+          background: #ffffff;
+          border: 1px solid rgba(62, 64, 151, 0.19);
+          box-sizing: border-box;
+          border-radius: 5px;
+        }
+      }
+      .details {
+        margin-bottom: 1rem;
+        .details_title {
+          width: 140px;
+          height: 24px;
+
+          font-family: "Scada", sans-serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height, or 133% */
+
+          color: #040523;
+        }
+        .details_input {
+          width: 588px;
+          height: 60px;
+
+          background: #ffffff;
+          border: 1px solid rgba(62, 64, 151, 0.19);
+          box-sizing: border-box;
+          border-radius: 5px;
+        }
+      }
+      .submitBtn {
+        width: 588px;
+        height: 64px;
+        outline: none;
+        background: #04aadc;
+        box-shadow: 0px 7px 14px #cbf3ff;
+        border-radius: 5px;
+        border: none;
+        font-family: "Scada", sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        /* identical to box height, or 133% */
+
+        color: #ffffff;
+      }
+    }
+  }
+}

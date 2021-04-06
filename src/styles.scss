@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "~ngx-toastr/toastr";
+.navbar {
+  background-color: #32ded4;
+}
+.nav-link {
+  font-family: "Scada", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  cursor: pointer;
+
+  color: #f9f9f9;
+}
+.top-nav-collapse {
+  background-color: #32ded4 !important;
+}
+.scrolling-navbar {
+  padding: 1rem 3rem 1rem 4rem !important;
+}
+// .md-form input[type="text"]:focus:not([readonly]) {
+//   border-bottom: 1px solid #32ded4 !important;
+//   box-shadow: 0 1px 0 0 #32ded4 !important;
+// }
+// .md-form textarea.md-textarea:focus:not([readonly]) {
+//   border-bottom: 1px solid #32ded4 !important;
+//   box-shadow: 0 1px 0 0 #32ded4 !important;
+// }
+
+@media only screen and (max-width: 768px) {
+  .navbar {
+    background-color: #32ded4;
+  }
+}
